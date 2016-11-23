@@ -6,85 +6,121 @@
 	<link href="css/global.css" rel="stylesheets">
 </head>
 <body>
+
 <!-- Шапка сайта -->
 <header>
-	<!-- Логотип -->
-	<a href="#" class="logo" title="">
-		<img src="logo.png" alt="" width="50" height="40">
-		<span class="logo-text"><b>Спецтех</b>24</span>
-	</a>
-	<!-- Главная навигация -->
-	<nav>
-		<ul class="list">
-			<li class="list-item"><a href="#" title="">О компании</a></li>
-			<li class="list-item"><a href="#" title="">Каталог</a></li>
-			<li class="list-item active"><a href="#" title="">Портфолио</a></li>
-			<li class="list-item"><a href="#" title="">Контакты</a></li>
-		</ul>
-	</nav>
-	<!-- Кнопка заказать звонок -->
-	<a href="#" class="btn-call" title="">Заказать звонок</a>
+
+	<div class="container">
+
+		<!-- Логотип -->
+		<a class="logo" href="#" title="">
+			<img src="logo.png" alt="" width="50" height="40">
+			<span class="logo__text"><b>Спецтех</b>24</span>
+		</a>
+
+		<!-- Главная навигация -->
+		<nav>
+			<ul class="list">
+				<li class="list-item"><a href="#" title="">О компании</a></li>
+				<li class="list-item"><a href="#" title="">Каталог</a></li>
+				<li class="list-item active"><a href="#" title="">Портфолио</a></li>
+				<li class="list-item"><a href="#" title="">Контакты</a></li>
+			</ul>
+		</nav>
+
+		<!-- Кнопка заказать звонок -->
+		<a href="#" class="btn-call" title="">Заказать звонок</a>
+
+	</div>
+
 </header>
+
 <!-- Главное содержимое -->
 <main>
-	<div class="sub-menu">
-		<h1>Портфолио</h1>
-		<ul>
-			<li><a href="#" title="">Все работы</a></li>
-			<li><a href="#" title="">Строительство</a></li>
-			<li><a href="#" title="">Демонтаж</a></li>
-			<li><a href="#" title="">Земляные работы</a></li>
-			<li><a href="#" title="">Перевозка</a></li>
-		</ul>
+
+	<div class="container">
+
+		<section class="description description--portfolio">
+
+			<h1>Портфолио</h1>
+
+			<ul>
+				<li><a href="#" title="">Все работы</a></li>
+				<li><a href="#" title="">Строительство</a></li>
+				<li><a href="#" title="">Демонтаж</a></li>
+				<li><a href="#" title="">Земляные работы</a></li>
+				<li><a href="#" title="">Перевозка</a></li>
+			</ul>
+
+		</section>
+
+		<!-- Раздел Экраны -->
+		<div class="screens">
+
+			<article class="screens-item">
+				<h2>Строительство жилого дома в деревушке на севере холма</h2>
+				<p>Спецтех24 - это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструметов для выполнения большинства видов работ</p>
+				<a href="#" class="screens-item__btn" title="">Подробнее</a>
+			</article>
+
+			<article class="screens-item">
+				<h2>Строительство жилого дома в деревушке на севере холма</h2>
+				<p>Спецтех24 - это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструметов для выполнения большинства видов работ</p>
+				<a href="#" class="screens-item__btn" title="">Подробнее</a>
+			</article>
+
+			<article class="screens-item">
+				<h2>Строительство жилого дома в деревушке на севере холма</h2>
+				<p>Спецтех24 - это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструметов для выполнения большинства видов работ</p>
+				<a href="#" class="screens-item__btn" title="">Подробнее</a>
+			</article>
+
+		</div>
+
+		<!-- Раздел Консультация -->
+		<div class="portfolio-consultation">
+			<form action="#" method="get">
+				<label>Как вас зовут?<input type="text" name="consult-name"></label>
+				<label>Номер для связи<input type="text" name="consult-tel"></label>
+				<label>Выберите дату<input type="text" name="consult-date"></label>
+				<input type="submit" value="Заказать консультацию">
+			</form>
+		</div>
+
+		<div class="advantages">
+			<p class="service">Техника проходит обязательное обслуживание перед каждым выездом</p>
+			<p class="signals">Все машины оборудованы спец. сигналами, для предупреждения аварий</p>
+			<p class="fences">Привезем модные строительные ограждения к каждому заказу от 20 000</p>
+			<p class="qualification">С техникой приедут квалифицированные операторы и водители</p>
+		</div>
+
 	</div>
-	<!-- Раздел Экраны -->
-	<div class="screens">
-		<article class="screens-item">
-			<h2>Строительство жилого дома в деревушке на севере холма</h2>
-			<p>Спецтех24 - это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструметов для выполнения большинства видов работ</p>
-			<a href="#" class="screens-btn" title="">Подробнее</a>
-		</article>
-		<article class="screens-item">
-			<h2>Строительство жилого дома в деревушке на севере холма</h2>
-			<p>Спецтех24 - это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструметов для выполнения большинства видов работ</p>
-			<a href="#" class="screens-btn" title="">Подробнее</a>
-		</article>
-		<article class="screens-item">
-			<h2>Строительство жилого дома в деревушке на севере холма</h2>
-			<p>Спецтех24 - это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструметов для выполнения большинства видов работ</p>
-			<a href="#" class="screens-btn" title="">Подробнее</a>
-		</article>
-	</div>
-	<!-- Раздел Консультация -->
-	<div class="portfolio-consultation">
-		<form action="#" method="get">
-			<label>Как вас зовут?<input type="text" name="consult-name"></label>
-			<label>Номер для связи<input type="text" name="consult-tel"></label>
-			<label>Выберите дату<input type="text" name="consult-date"></label>
-			<input type="submit" value="Заказать консультацию">
-		</form>
-	</div>
-	<div class="advantages">
-		<p class="service">Техника проходит обязательное обслуживание перед каждым выездом</p>
-		<p class="signals">Все машины оборудованы спец. сигналами, для предупреждения аварий</p>
-		<p class="fences">Привезем модные строительные ограждения к каждому заказу от 20 000</p>
-		<p class="qualification">С техникой приедут квалифицированные операторы и водители</p>
-	</div>
+
 </main>
 <footer>
-	<a href="#" class="footer-logo" title="">
-		<img src="footer-logo.png" alt="" width="50" height="40">
-		<span class="footer-logo-text"><b>Спецтех</b>24</span>
-	</a>
-	<div class="footer-nav">
-		<ul>
-			<li><a href="#" title="">Главная</a></li>
-			<li><a href="#" title="">Каталог</a></li>
-			<li><a href="#" title="">Портфолио</a></li>
-			<li><a href="#" title="">Контакты</a></li>
-		</ul>
+
+	<div class="container">
+
+		<a class="footer-logo" href="#" title="">
+			<img src="logo.png" alt="" width="50" height="40">
+			<span class="logo__text"><b>Спецтех</b>24</span>
+		</a>
+
+		<div class="footer-nav">
+
+			<ul>
+				<li><a href="#" title="">Главная</a></li>
+				<li><a href="#" title="">Каталог</a></li>
+				<li><a href="#" title="">Портфолио</a></li>
+				<li><a href="#" title="">Контакты</a></li>
+			</ul>
+
+		</div>
+
+		<a href="#" class="btn-call btn-call--footer right" title="">Заказать звонок</a>
+
 	</div>
-	<a href="#" class="footer-call" title="">Заказать звонок</a>
+
 </footer>
 </body>
 </html>
