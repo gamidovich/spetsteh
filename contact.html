@@ -1,144 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>Контакты</title> <!-- ** давай писать заголовки страниц на русском ** -->
-	<!-- ** самое время подключить стили ** -->
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<!-- Шапка сайта -->
-<header>
-	<!-- ** во всех блоках кроме карты должен быть вложен .container, например header>.container>a.logo+nav>ul и т.д. ** --> 
-	<div class="container">	
-
-		<!-- Логотип -->
-		<a class="logo" href="#" title="">
-
-			<img src="logo.png" alt="" width="50" height="40"> <!-- ** давай писать заголовки страниц на русском ** -->
-			<span class="logo__text"><b>Спецтех</b>24</span>
-
-		</a>
-
-		<!-- Главная навигация -->
-		<nav>
-
-			<ul class="list"> <!-- ** это опасный класс, давай писать в таком формате  ** -->
-				<li class="list-item"><a href="#" title="">О компании</a></li>
-				<li class="list-item"><a href="#" title="">Каталог</a></li>
-				<li class="list-item active"><a href="#" title="">Портфолио</a></li>
-				<li class="list-item"><a href="#" title="">Контакты</a></li>
-			</ul>
-
-		</nav>
-
-		<!-- Кнопка заказать звонок -->
-		<a class="btn-call" href="#" title="">Заказать звонок</a>
-
-	</div>
-</header>
-
-<!-- Главное содержимое -->
-<main>
-
-	<div class="container">
-
-		<!-- Блок описание раздела -->
-		<section class="description description--contacts">
-
-			<div class="left">
-				<h1>Контакты</h1>
-				<p class="description--contacts__title">Свяжитесь с нами, и все будет хорошо</p>
-			</div>				
-			
-			<a class="btn-call right" href="#" title="">Мне нужна консультация</a>
-
-		</section>
-
-		<div class="map left"></div>
-
-		<div class="contacts-form right">
-
-			<span class="contacts-form__tel">+7 (812) 212 85 06</span>
-			<span class="contacts-form__mail">rent@spezteh.ru</span>
-
-			<span class="contacts-form__title">Заказать консультацию по подбору подходящей техники:</span>
-			<form class="contacts-form__form" action="#" method="get">
-
-				<input type="text" name="consult-name" value="Имя"></label>
-				<input type="text" name="consult-tel" value="Телефон для связи"></label>
-				<textarea>Описание задачи (можно примерное)</textarea>
-				<input type="submit" value="Получить консультацию">
-
-			</form>
-
-		</div>
-	
-		<div class="reviews">
+	<head>
+		<meta charset="UTF-8">
+		<title>Контакты</title> <!-- ** давай писать заголовки страниц на русском ** -->
+		<!-- ** самое время подключить стили ** -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header class="main-header">
 			<div class="container">
-
-				<article class="reviews-item">
-						
-					<img src="pic1.jpg" alt="">
-					<blockquote>Спецтех24 - это надежные партнеры нашей компании, которые всегда выполняют свою работу быстро и еще у них отличное чувство юмора. Благодарим и рекомендуем</blockquote>
-					<cite>Оля Молния</cite>
-						
-				</article>
-
-				<article class="reviews-item">
-					
-					<img src="pic2.jpg" alt="">
-					<blockquote>Спецтех24 - это надежные партнеры нашей компании, которые всегда выполняют свою работу быстро и еще у них отличное чувство юмора. Благодарим и рекомендуем</blockquote>
-					<cite>Оля Молния</cite>
-						
-				</article>
-
-				<article class="reviews-item">
-
-					<img src="pic3.jpg" alt="">
-					<blockquote>Спецтех24 - это надежные партнеры нашей компании, которые всегда выполняют свою работу быстро и еще у них отличное чувство юмора. Благодарим и рекомендуем</blockquote>
-					<cite>Оля Молния</cite>
-
-				</article>
-
-				<article class="reviews-item">
-
-					<img src="pic4.jpg" alt="">
-					<blockquote>Спецтех24 - это надежные партнеры нашей компании, которые всегда выполняют свою работу быстро и еще у них отличное чувство юмора. Благодарим и рекомендуем</blockquote>
-					<cite>Оля Молния</cite>
-
-				</article>
-
+				<a class="main-header__logo" href="#">
+					<img src="img/logo.png" alt="">
+				</a>
+				<nav class="main-header__nav">
+					<ul class="nav-list">
+						<li class="nav-list__item"><a href="#" title="">О компании</a></li>
+						<li class="nav-list__item nav-list__item--active"><a href="#" title="">Каталог</a></li>
+						<li class="nav-list__item"><a href="#" title="">Портфолио</a></li>
+						<li class="nav-list__item"><a href="#" title="">Контакты</a></li>
+					</ul>
+				</nav>
+				<a class="button button_brass" href="#" title="">Заказать звонок</a>
 			</div>
-		</div>
-
-	</div>
-</main>
-<footer>
-	<div class="container">
-
-		<a class="footer-logo left" href="#" title="">
-
-			<img src="footer-logo.png" alt="" width="50" height="40">
-			<span class="footer-logo__text"><b>Спецтех</b>24</span>
-
-		</a>
-
-		<div class="footer-nav right">
-
-			<ul>
-				<li><a href="#" title="">Главная</a></li>
-				<li><a href="#" title="">Каталог</a></li>
-				<li><a href="#" title="">Портфолио</a></li>
-				<li><a href="#" title="">Контакты</a></li>
-			</ul>
-
-		</div>
-
-		<a class="btn-call btn-call--footer right" href="#" title="">Заказать звонок</a>
-
-	</div>
-</footer>
-</body>
+		</header>
+		<main>
+			<div class="main-description">
+				<div class="container">
+					<div class="main-description__title">
+						<h1 class="main-title main-title--contacts">Контакты</h1>
+						<p class="main-description main-description--contacts">Свяжитесь с нами, и все будет хорошо</p>
+					</div>
+					<div class="main-description__button">
+						<a class="button" href="#" title="">Мне нужна консультация</a>
+					</div>
+				</div>
+			</div>
+			<section class="contacts">
+				<div class="container">
+					<div class="map left"></div>
+					<div class="contacts-form right">
+						<span class="contacts-form__tel">+7 (812) 212 85 06</span>
+						<span class="contacts-form__mail">rent@spezteh.ru</span>
+						<span class="contacts-form__title">Заказать консультацию по подбору подходящей техники:</span>
+						<form class="contacts-form__form" action="#" method="get">
+							<input type="text" name="consult-name" value="Имя">
+							<input type="text" name="consult-tel" value="Телефон для связи">
+							<textarea>Описание задачи (можно примерное)</textarea>
+							<input type="submit" value="Получить консультацию">
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="container">
+					<h2 class="subtitle">Отзывы</h2>
+					<article class="reviews-item">
+						<img class="reviews-item__img" src="pic1.jpg" alt="">
+						<blockquote class="reviews-item__blockquote">Спецтех24 - это надежные партнеры нашей компании, которые всегда выполняют свою работу быстро и еще у них отличное чувство юмора. Благодарим и рекомендуем</blockquote>
+						<cite class="reviews-item__cite">Оля Молния</cite>
+					</article>
+					<article class="reviews-item">
+						<img class="reviews-item__img" src="pic1.jpg" alt="">
+						<blockquote class="reviews-item__blockquote">Спецтех24 - это надежные партнеры нашей компании, которые всегда выполняют свою работу быстро и еще у них отличное чувство юмора. Благодарим и рекомендуем</blockquote>
+						<cite class="reviews-item__cite">Оля Молния</cite>
+					</article>
+					<article class="reviews-item">
+						<img class="reviews-item__img" src="pic1.jpg" alt="">
+						<blockquote class="reviews-item__blockquote">Спецтех24 - это надежные партнеры нашей компании, которые всегда выполняют свою работу быстро и еще у них отличное чувство юмора. Благодарим и рекомендуем</blockquote>
+						<cite class="reviews-item__cite">Оля Молния</cite>
+					</article>
+					<article class="reviews-item">
+						<img class="reviews-item__img" src="pic1.jpg" alt="">
+						<blockquote class="reviews-item__blockquote">Спецтех24 - это надежные партнеры нашей компании, которые всегда выполняют свою работу быстро и еще у них отличное чувство юмора. Благодарим и рекомендуем</blockquote>
+						<cite class="reviews-item__cite">Оля Молния</cite>
+					</article>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container">
+				<a class="footer-logo" href="#" title="">
+					<img src="img/footer-logo.png" alt="">
+				</a>
+				<nav class="footer-nav">
+					<ul class="footer-nav-list">
+						<li class="footer-nav-list__item"><a href="#" title="">О компании</a></li>
+						<li class="footer-nav-list__item"><a href="#" title="">Каталог</a></li>
+						<li class="footer-nav-list__item footer-nav-list__item--active"><a href="#" title="">Портфолио</a></li>
+						<li class="footer-nav-list__item"><a href="#" title="">Контакты</a></li>
+					</ul>
+				</nav>
+				<a class="button button_footer" href="#" title="">Заказать звонок</a>
+			</div>
+		</footer>
+	</body>
 </html>
