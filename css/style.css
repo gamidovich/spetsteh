@@ -1,57 +1,231 @@
-body { background-color: pink; }
+body { font: 16px/1.5 'PT Sans', Geneva, Arial, Helvetica, sans-serif; }
+
+.clearfix:after {
+	content: "";
+	display: table; 
+	clear: both; 
+}
 
 .container { 
-	width:  960px;
+	width: 960px;
 	margin: 0 auto;
-	overflow: hidden;
-}
-
-.main-header {
-	padding: 15px 0;
-	background-color: orange;
-}
-
-.main-header__logo {
-	width: 30%;
-	float: left;
-	text-decoration: none;
-}
-
-.main-header-logo-img,
-.main-header-logo-text {
-	vertical-align: middle;
-}
-
-.main-header__nav {
-	width: 70%;
-	text-align: right;
-}
-
-.nav-list__item {
-	display: inline-block;
-}
-
-.promo {
-	padding: 15px 0;
-	text-align: center;
-	background-color: grey;
-}
-
-.consult__form {
-	overflow: hidden;
-}
-
-.consult-form-item {
-	width: 22%;
-	margin-right: 15px;
-	float: left;
-}
-
-.advantages {
-	padding: 15px 0;
-	
+	padding: 0 10px;
 }
 
 .left { float: left; }
+
 .right { float: right; }
-.text-center { text-align: center; }
+
+/* Шапка */
+
+.main-header {
+	background-color: #ffcd34;
+	padding: 15px 0 16px 0;
+}
+
+/* Логотип */
+
+.main-header__logo,
+.footer-logo {	
+	font-size: 24px;
+	text-decoration: none;
+}
+
+.main-header__logo {
+	color: #000;
+}
+
+.footer-logo {
+	color: #fff;
+}
+
+.main-header-logo-img,
+.main-header-logo-text,
+.footer-logo__img,
+.footer-logo__text {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* Главная навигация */
+
+.main-header__nav,
+.footer-nav {
+	text-align: right;
+}
+
+.nav-list,
+.footer-nav__list {
+	margin: 0;
+	padding: 0;	
+}
+
+.nav-list__item,
+.footer-nav-list__item {
+	display: inline-block;
+	margin-right: 25px;
+}
+
+.nav-list__item:last-child,
+.footer-nav-list__item:last-child {
+	margin-right: 0;
+}
+
+.nav-list__item a,
+.footer-nav-list__item a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.nav-list__item a {
+	color: #796e38;
+}
+
+.footer-nav-list__item a {
+	color: #fff;
+}
+
+.nav-list__item a:link,
+.nav-list__item a:visited,
+.footer-nav-list__item a:link,
+.footer-nav-list__item a:visited {
+	border: 2px solid transparent;
+	padding: 8px;
+}
+
+.nav-list__item a:hover {
+	border: 2px solid #bc9d36;
+}
+
+.footer-nav-list__item a:hover {
+	border: 2px solid #636d76;
+}
+
+.nav-list__item a:active {
+	border: 2px solid #796e38;
+}
+
+.footer-nav-list__item a:active {
+	border: 2px solid #a6abb1;
+}
+
+.nav-list__item--active a {
+	color: #000;
+}
+
+.footer-nav-list__item--active a {
+	color: #ffcd34;
+}
+
+.nav-list__item--active a:link,
+.nav-list__item--active a:visited,
+.nav-list__item--active a:hover,
+.nav-list__item--active a:active,
+.footer-nav-list__item--active a:link,
+.footer-nav-list__item--active a:visited,
+.footer-nav-list__item--active a:hover,
+.footer-nav-list__item--active a:active  {
+	border: 2px solid transparent;	
+}
+
+/* Кнопка Заказать звонок */
+
+.nav-list__item-call a:link,
+.nav-list__item-call a:visited {
+	padding: 8px 28px;
+	background-color: #ffe184;
+	border: none;
+	color: #000;
+}
+
+.nav-list__item-call a:hover {
+	background-color: #ffecb2;
+}
+
+.nav-list__item-call a:active {
+	background-color: #f6bf16;
+}
+
+.footer-nav-list__item-call a:link,
+.footer-nav-list__item-call a:visited,
+.footer-nav-list__item-call a:hover,
+.footer-nav-list__item-call a:active  {
+	background-color: none;
+	border: none;
+	color: #ffcd34;
+}
+
+/* Блок Промо */
+
+.promo { 
+	color: #fff;
+	text-align: center;
+	background-image: url(../img/ekskavator.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.promo-content {
+	width: 60%;
+	margin: 0 auto;
+	padding: 138px 0 117px 0;
+}
+
+.promo__text { 
+	font-size: 44px;
+	font-weight: bold;
+}
+
+.promo__title {
+	font-size: 20px;
+}
+
+/* Блок Преимущества */
+
+.advantages {
+	padding: 15px 0;
+}
+
+.advantages__item {
+	width: 22%;
+	margin-right: 4%;
+	box-sizing: border-box;
+	padding-left: 64px;	
+	background-size: 60px;
+	background-repeat: no-repeat;
+}
+
+.advantages__item:last-child {
+	margin-right: 0;
+}
+
+.advantages__item--worker {
+	background-image: url(../img/worker.jpg);
+}
+
+.advantages__item--border {
+	background-image: url(../img/border.jpg);
+}
+
+.advantages__item--tools {
+	background-image: url(../img/tools.jpg);
+}
+
+.advantages__item--operator {
+	background-image: url(../img/operator.jpg);
+}
+
+/* Футер */
+
+footer {
+	background-color: #202e3b;
+	padding: 15px 0 16px 0;
+}
+
+.about__numbers {
+	width: 300px;
+}
+
+.about__reviews {
+	width: 620px;
+}

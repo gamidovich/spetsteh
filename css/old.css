@@ -1,0 +1,57 @@
+body { background-color: pink; }
+
+.container { 
+	width:  960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.main-header {
+	padding: 15px 0;
+	background-color: orange;
+}
+
+.main-header__logo {
+	width: 30%;
+	float: left;
+	text-decoration: none;
+}
+
+.main-header-logo-img,
+.main-header-logo-text {
+	vertical-align: middle;
+}
+
+.main-header__nav {
+	width: 70%;
+	text-align: right;
+}
+
+.nav-list__item {
+	display: inline-block;
+}
+
+.promo {
+	padding: 15px 0;
+	text-align: center;
+	background-color: grey;
+}
+
+.consult__form {
+	overflow: hidden;
+}
+
+.consult-form-item {
+	width: 22%;
+	margin-right: 15px;
+	float: left;
+}
+
+.advantages {
+	padding: 15px 0;
+	
+}
+
+.left { float: left; }
+.right { float: right; }
+.text-center { text-align: center; }
