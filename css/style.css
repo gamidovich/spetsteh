@@ -16,6 +16,14 @@ body { font: 16px/1.5 'PT Sans', Geneva, Arial, Helvetica, sans-serif; }
 
 .right { float: right; }
 
+.button {
+	font-size: 18px;
+	font-weight: bold;
+	color: #202e3b;
+	text-decoration: none;
+	display: inline-block;
+}
+
 /* Шапка */
 
 .main-header {
@@ -90,7 +98,7 @@ body { font: 16px/1.5 'PT Sans', Geneva, Arial, Helvetica, sans-serif; }
 .footer-nav-list__item a:link,
 .footer-nav-list__item a:visited {
 	border: 2px solid transparent;
-	padding: 8px;
+	padding: 9px 13px;
 }
 
 .nav-list__item a:hover {
@@ -174,10 +182,38 @@ body { font: 16px/1.5 'PT Sans', Geneva, Arial, Helvetica, sans-serif; }
 .promo__text { 
 	font-size: 44px;
 	font-weight: bold;
+	margin-bottom: 0px;
 }
 
 .promo__title {
 	font-size: 20px;
+	font-weight: normal;
+	margin: 7px 0 25px 0;
+}
+
+.button-promo {
+	position: relative;
+	border: 2px solid #ffcd34;
+	padding: 12px 19px;
+	padding-right: 53px;
+	color: #fff;
+}
+
+.button-promo:after {
+	position: absolute;
+	top: 50%;
+	right: 27px;
+	margin-top: -5px;
+	content: "";
+	width: 10px;
+	height: 10px;
+	vertical-align: middle;
+	border-top: 4px solid #fff;
+	border-right: 4px solid #fff;
+	-webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+    	 -o-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 /* Блок Преимущества */
