@@ -355,3 +355,72 @@ footer {
 .about__reviews {
 	width: 620px;
 }
+
+.technic {
+	background-color: #f3f3f3;
+	padding: 45px 0 34px 0;
+}
+
+.technic-nav-list {
+	list-style: none;
+	margin-top: 20px;
+	padding-right: 68px;
+}
+
+.technic-nav-list__item {
+	position: relative;
+	margin-bottom: 16px;
+}
+
+.technic-nav-list__item a:link,
+.technic-nav-list__item a:visited {
+	color: #353535;
+}
+
+.technic-nav-list__item a:hover {
+	font-weight: bold;
+}
+
+.technic-nav-list__item a:active {
+	font-weight: bold;
+	text-decoration: none; 
+}
+
+.technic-nav-list__item--active a {
+	font-weight: bold;
+	text-decoration: none;
+	padding-left: 20px;
+}
+
+.technic-nav-list__item--active:after {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	display: block;
+	content: "";
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #202e3b;
+	border-right: 2px solid #202e3b;
+	-webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+    	 -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+
+}
+
+.technic-table-list {
+	width: 100%;
+}
+
+.technic-table-list__item:nth-child(odd) {
+	background-color: #fff;
+}
+
+.technic-table-list__item th {
+	background-color: #dfdfdf;
+}
+
+.technic-table-list__item td {
+	padding: 6px 90px 6px 6px;
+}
