@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body { font: 16px/1.5 'PT Sans', Geneva, Arial, Helvetica, sans-serif; }
 
 .clearfix:after {
@@ -173,6 +178,24 @@ body { font: 16px/1.5 'PT Sans', Geneva, Arial, Helvetica, sans-serif; }
 	background-repeat: no-repeat;
 }
 
+.promo:after,
+.promo:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 14px;
+	background: linear-gradient(
+		-55deg, 
+		#000 33.33%,
+		#ffcd34 33.33%,
+		#ffcd34 66.66%,
+		#000 66.66%,
+		#000 99.99%
+	);
+	background-size: 20px 14px;
+	background-repeat: repeat-x;
+}
+
 .promo-content {
 	width: 60%;
 	margin: 0 auto;
@@ -193,7 +216,6 @@ body { font: 16px/1.5 'PT Sans', Geneva, Arial, Helvetica, sans-serif; }
 
 .button-promo {
 	position: relative;
-	border: 2px solid #ffcd34;
 	padding: 12px 19px;
 	padding-right: 53px;
 	color: #fff;
@@ -216,39 +238,107 @@ body { font: 16px/1.5 'PT Sans', Geneva, Arial, Helvetica, sans-serif; }
             transform: rotate(45deg);
 }
 
+.button-promo:link,
+.button-promo:visited {
+	border: 2px solid #ffcd34;
+}
+
+.button-promo:hover {
+	border: 2px solid #ffd966;	
+}
+
+.button-promo:active {
+	border: 2px solid #ffe390;
+}
+
+/* Блок Консультация */
+
+.consult {
+	padding: 28px 0 40px 0;
+	background-color: #202e3b;
+}
+
+.consult__title {
+	font-size: 24px;
+	color: #ffcd34;
+	margin-bottom: 30px;
+}
+
+.consult-form-item {
+	border: 1px solid #ffcd34;
+	background-color: #202e3b;
+	width: 197px;
+	height: 24px;
+	color: #fff;
+	padding: 10px;
+}
+
+.consult-form-item:focus {
+	border: 1px solid #887e4f;
+	outline: none;
+}
+
+:focus::-webkit-input-placeholder { color: transparent }
+:focus::-moz-placeholder { color: transparent }
+:focus:-moz-placeholder { color: transparent }
+:focus:-ms-input-placeholder { color: transparent }
+
+.consult-form-button {
+	position: relative;
+	width: 221px;
+	height: 46px;
+	background-color: #ffcd34;
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+
 /* Блок Преимущества */
 
 .advantages {
-	padding: 15px 0;
+	padding: 48px 0;
 }
 
 .advantages__item {
+	position: relative;
 	width: 22%;
 	margin-right: 4%;
 	box-sizing: border-box;
-	padding-left: 64px;	
-	background-size: 60px;
+	font-size: 13px;
+	padding-left: 65px;
+}
+
+.advantages__item:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 40px;
+	content: "";
+	display: block;
+	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
+	
 }
 
 .advantages__item:last-child {
 	margin-right: 0;
 }
 
-.advantages__item--worker {
-	background-image: url(../img/worker.jpg);
+.advantages__item--worker:before {
+	background-position: 0 0;	
 }
 
-.advantages__item--border {
-	background-image: url(../img/border.jpg);
+.advantages__item--border:before {
+	background-position: -65px 0;		
 }
 
-.advantages__item--tools {
-	background-image: url(../img/tools.jpg);
+.advantages__item--tools:before {
+	background-position: -130px 0;		
 }
 
-.advantages__item--operator {
-	background-image: url(../img/operator.jpg);
+.advantages__item--operator:before {
+	background-position: -195px 0;		
 }
 
 /* Футер */
