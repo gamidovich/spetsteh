@@ -631,8 +631,72 @@ footer {
 	width: 300px;
 }
 
+.contacts-form__tel,
+.contacts-form__mail {
+	padding-left: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	background-position: 0 5px;
+	background-repeat: no-repeat;
+}
+
+.contacts-form__tel {
+	background-image: url(../img/phone.png);
+}
+
+.contacts-form__mail {
+	background-image: url(../img/mail.png);
+}
+
+.contacts-form__title {
+	margin: 18px 0 14px 0;
+	line-height: 16px; 	
+}
+
+.contacts-form__form input,
+.contacts-form__form textarea {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+.contacts-form__form textarea {
+	min-height: 100px;
+}
+
+.reviews-contact {
+	padding: 40px 0;
+}
+
+.reviews-contact--subtitle {
+	margin-bottom: 20px;
+}
+
 .reviews-item-contact {
 	width: 220px;
+	text-align: center;
+}
+
+.reviews-item-contact__img {
+	display: block;
+	margin: 0 auto 24px auto;
+	width: 120px;
+	height: 120px;
+	max-width: 100%;
+}
+
+.reviews-item-contact__blockquote > p {
+	font-size: 14px;
+	color: #202e3b;
+	font-style: italic;
+}
+
+.reviews-item-contact__blockquote > cite {
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	font-weight: bold;
 }
 
 /* Страница Портфолио */
@@ -648,4 +712,3 @@ footer {
 	margin-right: 0;	
 }
 
-/**/
