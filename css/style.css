@@ -703,6 +703,21 @@ footer {
 
 /* Описание страинцы */
 
+.screens-item__description {
+	width: 320px;
+	padding: 30px;
+	background-color: #fff;
+}
+
+.main-description__title {
+	min-width: 220px;
+	margin-right: 20px;
+}
+
+.main-description__menu {
+	min-width: 700px;
+}
+
 .main-description-menu-list__item {
 	display: inline-block;
 	margin-right: 40px;
@@ -711,4 +726,24 @@ footer {
 .main-description-menu-list__item:last-child {
 	margin-right: 0;	
 }
+
+.screens-item {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 500px;
+}
+
+.screens-item--1 {
+	background-image: url(../img/home1.jpg);
+}
+
+.screens-item--2 {
+	background-image: url(../img/home2.jpg);
+}
+
+.screens-item--3 {
+	background-image: url(../img/home3.jpg);
+}
+
 
