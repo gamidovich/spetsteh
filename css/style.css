@@ -32,6 +32,52 @@ body {
 	display: inline-block;
 }
 
+.button-description {
+	padding-top: 10px;
+	color: #fff;
+}
+
+/* Название и описание страницы */
+
+.main-description {	padding: 30px 0; }
+
+
+.main-description__title {
+	width: 690px;
+	margin-right: 10px;
+}
+
+.main-description__button {	width: 240px; }
+
+.main-description--contact {
+	background-image: url(../img/ekskavator1.jpg);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-description-title-name {
+	display: inline-block;
+	margin: 0;
+	margin-right: 16px;
+	font-size: 26px;
+	color: #ffcd34;
+}
+
+.main-description-title-description {
+	min-width: 300px;
+	display: inline-block;
+	color: #fff;	
+}
+
+.main-description__button a:link,
+.main-description__button a:visited {
+	padding: 8px 20px;
+	background-color: #ffcd34;
+}
+
+
+
 /* Шапка */
 
 .main-header {
@@ -154,11 +200,13 @@ body {
 	color: #000;
 }
 
-.nav-list__item-call a:hover {
+.nav-list__item-call a:hover,
+.main-description__button a:hover {
 	background-color: #ffecb2;
 }
 
-.nav-list__item-call a:active {
+.nav-list__item-call a:active,
+.main-description__button a:active {
 	background-color: #f6bf16;
 }
 
@@ -498,3 +546,68 @@ footer {
 	margin-top: 3px;
 	display: inline-block;
 }
+
+/* Страница каталога */
+
+/* Описание страницы */
+
+
+
+.subtitle--catalog {
+	
+}
+
+.catalog__menu {
+	width: 220px;
+	margin-right: 20px;
+}
+
+.catalog__list {
+	width: 720px;
+}
+
+.pagination {
+	width: 100%;
+}
+
+/* Страница Контакты */
+
+/* Описание страинцы */
+
+.contacts {
+	min-height: 394px;
+	background-color: #f3f3f3;
+	padding: 40px 0 50px 0;
+}
+
+.main-description--contacts {
+	display: inline-block;
+}
+
+.map-contact {
+	width: 620px;
+	margin-right: 20px;
+}
+
+.contacts-form {
+	width: 300px;
+}
+
+.reviews-item-contact {
+	width: 220px;
+}
+
+/* Страница Портфолио */
+
+/* Описание страинцы */
+
+.main-description-menu-list__item {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.main-description-menu-list__item:last-child {
+	margin-right: 0;	
+}
+
+/**/
