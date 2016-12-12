@@ -3,7 +3,10 @@
 	padding: 0;
 }
 
-body { font: 16px/1.5 'PT Sans', Geneva, Arial, Helvetica, sans-serif; }
+body { 
+	min-width: 960px;
+	font: 16px/1.5 'PT Sans', Geneva, Arial, Helvetica, sans-serif; 
+}
 
 .clearfix:after {
 	content: "";
