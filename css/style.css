@@ -551,23 +551,61 @@ footer {
 
 /* Описание страницы */
 
-
-
-.subtitle--catalog {
-	
+.catalog {
+	padding: 20px 0 46px 0;
+	background-color: #f3f3f3;
 }
 
 .catalog__menu {
-	width: 220px;
+	width: 260px;
 	margin-right: 20px;
 }
 
 .catalog__list {
-	width: 720px;
+	width: 680px;
+}
+
+.catalog-list__item {
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	width: 300px;
+	padding: 30px;
+	background-color: #fff;
+}
+
+.catalog-list__item:nth-child(odd) {
+	margin-right: 20px;
 }
 
 .pagination {
 	width: 100%;
+	margin-top: 46px;
+	text-align: center;
+}
+
+.pagination-list__item {
+	display: inline-block;
+}
+
+.pagination-list__item a:link,
+.pagination-list__item a:visited {
+	display: inline-block;
+	padding: 5px 7px;
+	background-color: #354b60;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 4px;
+}
+
+.deals {
+	padding: 36px 0;
+	background-image: url(../img/ekskavator2.jpg);
+	background-position: -80% center;
+	background-size: cover;
+}
+
+.deals .subtitle {
+	margin-bottom: 20px;
 }
 
 /* Страница Контакты */
