@@ -703,28 +703,59 @@ footer {
 
 /* Описание страинцы */
 
-.screens-item__description {
-	width: 320px;
-	padding: 30px;
-	background-color: #fff;
-}
-
-.main-description__title {
+.main-description__title-portfolio {
 	min-width: 220px;
 	margin-right: 20px;
 }
 
-.main-description__menu {
+.main-description--portfolio {
+	background-image: url(../img/ekskavator3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.main-description-title-portfolio-name {
+	margin: 0;
+	font-size: 26px;
+	color: #ffcd34;
+}
+
+.main-description__menu-portfolio {
 	min-width: 700px;
+	text-align: right;
 }
 
-.main-description-menu-list__item {
+.main-description-menu-portfolio-list {
+	padding-top: 8px;
 	display: inline-block;
-	margin-right: 40px;
+}
+.main-description-menu-portfolio-list__item {
+	display: inline-block;
+	margin-right: 36px;
 }
 
-.main-description-menu-list__item:last-child {
-	margin-right: 0;	
+.main-description-menu-portfolio-list__item:last-child {
+	margin-right: 0;
+}
+
+.main-description-menu-portfolio-list__item a:link,
+.main-description-menu-portfolio-list__item a:visited {
+	color: #fff;
+}
+
+.main-description-menu-portfolio-list__item a:hover {
+	font-weight: bold;
+}
+
+.main-description-menu-portfolio-list__item a:active {
+	text-decoration: none;
+}
+
+.screens-item__description {
+	width: 320px;
+	padding: 30px;
+	background-color: #fff;
 }
 
 .screens-item {
@@ -732,6 +763,7 @@ footer {
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 500px;
+	padding-top: 100px;
 }
 
 .screens-item--1 {
@@ -744,6 +776,70 @@ footer {
 
 .screens-item--3 {
 	background-image: url(../img/home3.jpg);
+}
+
+.screens-item-description-title {
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.screens-item-description-description {
+	margin: 12px 0;
+	font-size: 14px;
+	color: #202e3b;
+}
+
+.screens-item-description-btn:link,
+.screens-item-description-btn:visited {
+	position: relative;
+	display: inline-block;
+	background-color: #ffcd34;
+	text-decoration: none;
+	color: #1d333f;
+	font-weight: bold;
+	padding: 7px 38px 7px 16px ;
+}
+
+.screens-item-description-btn:hover {
+	background-color: #ffd966;
+}
+
+.screens-item-description-btn:active {
+	background-color: #f6bf16;
+}
+
+.screens-item-description-btn:after {
+	position: absolute;
+	top: 50%;
+	right: 14px;
+	margin-top: -8px;
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 20px;
+	background-image: url(../img/arrow-right.png);
+	background-repeat: no-repeat;
+}
+
+
+.dowlond-file:link,
+.dowlond-file:visited {
+	display: block;
+	padding: 8px 10px 8px 35px;
+	background-color: #354b60;
+	color: #fff;
+	text-decoration: none;
+	background-image: url(../img/download.png);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+
+.dowlond-file:hover {
+	background-color: #46617a;
+}
+
+.dowlond-file:active {
+	background-color: #567999;
 }
 
 
