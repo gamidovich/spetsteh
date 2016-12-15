@@ -1,92 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Spectext24</title>
-</head>
-<body>
-
-  <header class="page-header">
-    <a href="" class="logo">
-      <img src="" alt="" class="logo-img">
-      <span class="logo-text"><b>Спецтех</b>24</span>
-    </a>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="#">Lorem.</a></li>
-        <li><a href="#">Illum.</a></li>
-        <li><a href="#">Veniam?</a></li>
-        <li><a href="#" class="btn-order">Illum?</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div class="promo">
-      <span class="promo-text">вместе мы справимся!</span>
-      <h1 class="promo-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed excepturi, eligendi obcaecati suscipit reprehenderit officiis.</h1>
-      <a href="#" class="btn-catalog">Lorem ipsum.</a>
-    </div>
-
-    <section class="consult">
-      <h2 class="consult-title">Lorem ipsum.</h2>
-      <form action="" class="consult-form"></form>
-    </section>
-
-    <div class="advantages">
-      <div class="advantages-item advantages-item-worker">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, reiciendis?</div>
-      <div class="advantages-item advantages-item-border">Earum optio placeat vitae ad voluptates! Alias beatae recusandae doloribus!</div>
-      <div class="advantages-item advantages-item-tools">Rerum cumque animi saepe, maiores provident est, iste laboriosam itaque.</div>
-      <div class="advantages-item advantages-item-operator">Delectus, est molestiae temporibus ex sint amet reiciendis recusandae dolorum.</div>
-    </div>
-
-    <div class="technic">
-      <nav class="technic-nav">
-        <h2 class="subtitle">Lorem ipsum.</h2>
-        <ul>
-          <li><a href="">Lorem ipsum.</a></li>
-          <li><a href="">Magnam, repellat.</a></li>
-          <li><a href="">Nihil, repellendus.</a></li>
-          <li><a href="">Rerum, maxime.</a></li>
-          <li><a href="">Vero, numquam.</a></li>
-        </ul>
-      </nav>
-      <section class="technic-offers">
-        <h2 class="subtitle">Lorem ipsum.</h2>
-        <table class="technic-offers-table"></table>
-      </section>
-    </div>
-
-    <div class="about">
-      <div class="numbers">
-        <h2 class="subtitle">Lorem ipsum.</h2>
-        <ul class="numbers-list">
-          <li><span class="numbers-number">1</span>Lorem ipsum.</li>
-          <li><span class="numbers-number">2</span>Iure, quia!</li>
-          <li><span class="numbers-number">3</span>Id, sunt.</li>
-          <li><span class="numbers-number">4</span>Laboriosam, molestias.</li>
-        </ul>
-      </div>
-      <section class="reviews">
-        <h2 class="subtitle">Lorem ipsum.</h2>
-        <div class="reviews-item">
-          <img src="" alt="" class="reviews-img">
-          <blockquote class="reviews-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, sit!</p>
-            <cite class="reviews-author">Lorem ipsum.</cite>
-          </blockquote>
-        </div>
-        <div class="reviews-item">
-          <img src="" alt="" class="reviews-img">
-          <blockquote class="reviews-text">
-            <p>Praesentium consequuntur sed in ducimus dolorum quasi, eaque officiis ab!</p>
-            <cite class="reviews-author">Voluptatum, velit.</cite>
-          </blockquote>
-        </div>
-      </section>
-    </div>
-    <div class="map"><img src="" alt=""></div>
-  </main>
-
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Спецтех24</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container clearfix">
+				<a class="main-header__logo left" href="#">
+					<img class="main-header-logo-img" src="img/logo.png" alt="">
+					<span class="main-header-logo-text"><b>Спецтех</b>24</span>
+				</a>
+				<nav class="main-header__nav right">
+					<ul class="nav-list">
+						<li class="nav-list__item nav-list__item--active"><a href="#" title="">О компании</a></li>
+						<li class="nav-list__item"><a href="catalog.html" title="">Каталог</a></li>
+						<li class="nav-list__item"><a href="portfolio.html" title="">Портфолио</a></li>
+						<li class="nav-list__item"><a href="contact.html" title="">Контакты</a></li>
+						<li class="nav-list__item nav-list__item-call"><a href="#" title="">Заказать звонок</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div class="promo">
+				<div class="container clearfix">
+					<div class="promo-content">
+					<p class="promo__text">ВМЕСТЕ МЫ СПРАВИМСЯ!</p>
+					<h1 class="promo__title">Спецтех24 - это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов для выполнения большинства видов работ.</h1>
+					<a class="button button-promo" href="">Перейти в каталог</a>
+				</div>
+			</div>
+		</div>
+		<div class="consult clearfix">
+			<div class="container">
+				<p class="consult__title">Закажите бесплатную консультацию по подбору подходящей техники</p>
+				<form class="consult__form" action="#" method="post">
+					<input class="consult-form-item" type="text" name="consult-name" placeholder="Как вас зовут?">
+					<input class="consult-form-item" type="text" name="consult-tel" placeholder="Номер для связи">
+					<input class="consult-form-item" type="date" name="consult-date" placeholder="Выберите дату">
+					<input class="consult-form-button button" type="submit" value="Заказать консультацию" name="consult-btn">
+				</form>
+			</div>
+		</div>
+		<div class="advantages">
+			<div class="container clearfix">
+				<p class="advantages__item advantages__item--worker left">Техника проходит обязательное обслуживание перед каждым выездом</p>
+				<p class="advantages__item advantages__item--border left">Все машины оборудованы спец. сигналами, для предупреждения аварий</p>
+				<p class="advantages__item advantages__item--tools left">Привезем модные строительные ограждения к каждому заказу от 20 000</p>
+				<p class="advantages__item advantages__item--operator left">С техникой приедут квалифицированные операторы и водители</p>
+			</div>
+		</div>
+		<div class="technic">
+			<div class="container clearfix">
+				<section class="technic__nav left">
+					<h2 class="subtitle">Вся техника</h2>
+					<ul class="technic-nav-list">
+						<li class="technic-nav-list__item"><a href="#">Гусеничные эксковаторы</a></li>
+						<li class="technic-nav-list__item technic-nav-list__item--active"><a href="#">Колесные эксковаторы</a></li>
+						<li class="technic-nav-list__item"><a href="#">Мини-эксковаторы</a></li>
+						<li class="technic-nav-list__item"><a href="#">Автокраны</a></li>
+						<li class="technic-nav-list__item"><a href="#">Фронтальные погрузчики</a></li>
+						<li class="technic-nav-list__item"><a href="#">Навесное оборудование</a></li>
+						<li class="technic-nav-list__item"><a href="#">Дизельгенераторы</a></li>
+					</ul>
+				</section>
+				<section class="technic__offers clearfix left">
+					<h2 class="subtitle">Спецпредложения</h2>
+					<table class="technic-table-list">
+						<tr class="technic-table-list__item">
+							<th>Позиция для аренды</th>
+							<th>За смену</th>
+							<th>За неделю</th>
+							<th>За месяц</th>
+						</tr>
+						<tr class="technic-table-list__item">
+							<td>Мини-экскаватор CAT</td>
+							<td>5 000 00 000 000  0 0 00</td>
+							<td>25 000</td>
+							<td>60 000</td>
+						</tr>
+						<tr class="technic-table-list__item">
+							<td>Экскаватор Volvo</td>
+							<td>3 000</td>
+							<td>15 000</td>
+							<td>40 000</td>
+						</tr>
+						<tr class="technic-table-list__item">
+							<td>Грузовик Volvo</td>
+							<td>5 000</td>
+							<td>25 000</td>
+							<td>80 000</td>
+						</tr>
+						<tr class="technic-table-list__item">
+							<td>Мини-экскаватор CAT</td>
+							<td>5 900</td>
+							<td>16 000</td>
+							<td>78 000</td>
+						</tr>
+					</table>
+				</section>
+			</div>
+		</div>
+		<div class="about">
+			<div class="container clearfix">
+				<section class="about__numbers left">
+					<h2 class="subtitle subtitle--white"><b>Спецтех</b> в цифрах</h2>
+					<ul class="about-list">
+						<li class="about-list__item"><b>16</b><span class="about-list-item-text">Лет работы</span></li>
+						<li class="about-list__item"><b>715</b> Объектов построено</li>
+						<li class="about-list__item"><b>108</b> Единиц техники</li>
+						<li class="about-list__item"><b>500+</b> Довольных клиентов</li>
+					</ul>
+				</section>
+				<section class="about__reviews left">
+					<h2 class="subtitle subtitle--white">Нас рекомендуют клиенты</h2>
+					<div class="reviews-item clearfix">
+						<img class="reviews-item__img left" src="img/face.jpg" alt="">
+						<blockquote class="reviews-item__blockquote left">
+							<p>Спецтех24 - это надежные партнеры нашей компании, которые всегда выполняют свою работу быстро и еще у них отличное чувство юмора. Благодарим и рекомендуем</p>
+							<cite>Оля Вольт, Реал-Строй</cite>
+						</blockquote>
+					</div>
+					<div class="reviews-item clearfix">
+						<img  class="reviews-item__img left" src="img/face2.jpg" alt="">
+						<blockquote class="reviews-item__blockquote left">
+							<p>Все виды работ, предусмотренные договором, компания выполнила на высоком уровне, качественно, в срок, в соответсвии стребованиями ООО "ТНН" рекомендует</p>
+							<cite>Григорий Безымянных, ТНН</cite>
+						</blockquote>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div class="map">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=d-hESd0LXizU9zpC0qeM-PDAU9Cp3djG&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+		</div>
+		</main>
+		<footer>
+			<div class="container clearfix">
+				<a class="footer-logo left" href="#" title="">
+					<img class="footer-logo__img" src="img/footer-logo.png" alt="">
+					<span class="footer-logo__text"><b>Спецтех</b>24</span>
+				</a>
+				<nav class="footer-nav right">
+					<ul class="footer-nav__list">
+						<li class="footer-nav-list__item footer-nav-list__item--active"><a href="#" title="">О компании</a></li>
+						<li class="footer-nav-list__item"><a href="#" title="">Каталог</a></li>
+						<li class="footer-nav-list__item"><a href="#" title="">Портфолио</a></li>
+						<li class="footer-nav-list__item"><a href="#" title="">Контакты</a></li>
+						<li class="footer-nav-list__item footer-nav-list__item-call"><a href="#" title="">Заказать звонок</a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+	</body>
 </html>
