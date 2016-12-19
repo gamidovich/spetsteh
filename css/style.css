@@ -229,6 +229,7 @@ body {
 	background-image: url(../img/ekskavator.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 .promo:after,
